@@ -26,6 +26,29 @@ while (validName == true)
     {
 
         Console.WriteLine(" Hello neighbor , " + anothaName + ", would you like some tea or coffee? ");
+        string liquidType = Console.ReadLine();
+
+            if( liquidType == "tea")
+
+            {
+                Console.WriteLine("Here's a very good Jasmine Tea I think you would like!");
+            }
+
+            else if( liquidType == "coffee")
+
+            {
+
+                Console.WriteLine("Here is your coffee! hope you like it!") ;
+            }
+    }
+
+    Console.WriteLine( "Want to run it again? just hit keyboard to play again or type done");
+    anothaName = Console.ReadLine().ToLower();
+
+    if (anothaName == "done")
+    {
+
+        validName = false;
     }
 
 }
